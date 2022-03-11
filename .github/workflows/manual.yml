@@ -34,8 +34,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run script file
-      run: |
-          mongosh "mongodb+srv://mongo-content-env-stg.dvbfw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" --username daragies --password daragies
-          use db-content-services
-          db.channels.find({_id: 'channel:mcp:callsign:Z002'}, {description: 1})
+      run: mongosh --file ./deployment-scripts/release-1.0.js
       shell: bash
