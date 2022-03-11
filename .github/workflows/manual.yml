@@ -36,7 +36,7 @@ jobs:
     - name: Run script file
       run: |
           mongosh "mongodb+srv://mongo-content-env-stg.dvbfw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" --username daragies --password daragies
-          show dbs
+          mongosh show dbs
           use db-content-services
           db.channels.find({_id: 'channel:mcp:callsign:Z002'}, {description: 1})
       shell: bash
