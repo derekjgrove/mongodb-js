@@ -28,7 +28,13 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
-      
+  read_script:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: read script file
+      run: cat ./deployment-scripts/release-1.0.js
+      shell: bash      
   db:
     runs-on: ubuntu-latest
     steps:
