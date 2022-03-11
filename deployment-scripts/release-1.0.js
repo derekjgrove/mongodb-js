@@ -1,5 +1,14 @@
-//client = Mongo("mongodb://cluster0-shard-00-00.xzkla.mongodb.net:27017,cluster0-shard-00-01.xzkla.mongodb.net:27017,cluster0-shard-00-02.xzkla.mongodb.net:27017/?replicaSet=atlas-t3jo8a-shard-0", "testUser ", "testUser ")
-//db = client.getDB('sample_training')
+//to switch DBs - db = db.getSiblingDB('<db_name>')
 
-//printjson(db.getCollection('companies').find({name: 'Wetpaint'}))
+//RUN UPDATE
+//var updateRes = db.<db_name>.updateOne({_id: <ObjectId()>}, {$set: {}})
+
+//VERIFY OPERATION
+//print(updateRes)
+
+//ASSERT LOGIC
+//var updatedRecord = db.<db_name>.find({_id: <ObjectId_From_updatedRes>}).toArray()
+//print('Record updated correctly ==> ' + (updatedRecord[0]['<updated_field>'] === 'expected_value'))
+
+
 print(db.companies.find({name: 'Wetpaint'}))
