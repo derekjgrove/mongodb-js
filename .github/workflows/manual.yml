@@ -40,5 +40,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run script file
-      run: mongosh "mongodb+srv://cluster0.xzkla.mongodb.net/admin" --username testUser --password testUser --file ./deployment-scripts/release-1.0.js
+      run: mongosh "mongodb+srv://cluster0.xzkla.mongodb.net/sample_training" --username testUser --password testUser --file ./deployment-scripts/release-1.0.js
       shell: bash
