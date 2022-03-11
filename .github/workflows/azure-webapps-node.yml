@@ -1,0 +1,13 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    environment:
+      name: 'dev'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run script file
+      run: mongosh "mongodb+srv://cluster0.xzkla.mongodb.net/admin" --username testUser --password testUser --file ./deployment-scripts/release-1.0.js
+      shell: bash
