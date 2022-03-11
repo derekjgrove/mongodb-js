@@ -1,5 +1,5 @@
-client = connect("mongo-content-env-stg.dvbfw.mongodb.net/myFirstDatabase", "daragies", "daragies")
-db = client.getDB('db-content-services')
+client = connect("cluster0.xzkla.mongodb.net/admin", "testUser ", "testUser ")
+db = client.getDB('sample_training')
 
-printjson(db.getCollection('channels').find({_id: 'channel:mcp:callsign:Z002'}, {title: 1}))
-db.getCollection('channels').find({_id: 'channel:mcp:callsign:Z002'}, {title: 1})
+printjson(db.getCollection('companies').find({name: 'Wetpaint'}))
+db.getCollection('companies').find({name: 'Wetpaint'})
