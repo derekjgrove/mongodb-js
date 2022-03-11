@@ -32,6 +32,5 @@ jobs:
   db:
     runs-on: ubuntu-latest
     steps:
-    # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ github.event.inputs.name }}"
+      - run: mongosh "mongodb+srv://daragies:daragies@mongo-content-env-stg.dvbfw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+      - run: show dbs
