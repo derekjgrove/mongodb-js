@@ -75,5 +75,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run script file
-      run: mongosh "mongodb+srv://${{ github.event.inputs.deployment }}.xzkla.mongodb.net/${{ github.event.inputs.database }}" --username testUser --password testUser --file ./deployment-scripts/release-1.0.js collection=${{ github.event.inputs.collection }} op=${{ github.event.inputs.op }}
+      run: mongosh "mongodb+srv://${{ github.event.inputs.deployment }}.xzkla.mongodb.net/${{ github.event.inputs.database }}" --username testUser --password testUser --eval 'var collection="${{ github.event.inputs.collection }}"; var op="${{ github.event.inputs.op }}";' --file ./deployment-scripts/release-1.0.js
       shell: bash
