@@ -24,4 +24,5 @@
 
 // print(insertCompanies)
 
-print(arguments)
+print('collection --> ' + collection)
+print('op --> ' + op)
