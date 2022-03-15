@@ -1,0 +1,4 @@
+[
+    {"t":{"$date":"2022-03-01T21:42:05.115+00:00"},"s":"I",  "c":"COMMAND",  "id":99999,   "ctx":"<ctx>","msg":"Slow query","attr":{"type":"command","ns":"<db>.<collection>","command":{"find":"<collection>","filter":{"foo": "bar"}},"singleBatch":true,"batchSize":1,"returnKey":false,"showRecordId":false,"lsid":{"id":{"$uuid":"<uuid>"}},"$clusterTime":{"clusterTime":{"$timestamp":{"t":1646170918,"i":21}},"signature":{"hash":{"$binary":{"base64":"<base64>","subType":"0"}},"keyId":99999}},"$db":"<db>","$readPreference":{"mode":"<readPrefernce>"}},"planSummary":"..."}
+]
+    

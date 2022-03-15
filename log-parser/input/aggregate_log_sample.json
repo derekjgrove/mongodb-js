@@ -1,0 +1,3 @@
+[
+    {"t":{"$date":"2022-03-01T22:35:12.742+00:00"},"s":"I",  "c":"COMMAND",  "id":99999,   "ctx":"conn58494","msg":"Slow query","attr":{"type":"command","ns":"<db>.<collection>","command":{"aggregate":"<collection>","pipeline":[{"$match":{"foo": "bar"}}]},"cursor":{},"lsid":{"id":{"$uuid":"<UUID>"}},"$clusterTime":{"clusterTime":{"$timestamp":{"t":1646174111,"i":4}},"signature":{"hash":{"$binary":{"base64":"<base64>","subType":"0"}},"keyId":99999}},"$db":"<db>","$readPreference":{"mode":"<readPreference>"}},"planSummary":"..."}
+]

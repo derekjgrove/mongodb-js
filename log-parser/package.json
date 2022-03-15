@@ -1,0 +1,13 @@
+{
+    "name": "log-parser",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "curl-requests": "node index.js createCurlRequests",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+  

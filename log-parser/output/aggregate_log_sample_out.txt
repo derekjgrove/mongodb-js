@@ -1,0 +1,1 @@
+curl --request POST 'http://localhost:8000/aggregate' --header 'Content-Type: application/json' --header 'Access-Control-Request-Headers: *' --data-raw '{"dataSource":"<CLUSTER_NAME>","collection":"<collection>","query":[{"$match":{"foo":"bar"}}],"method":"aggregate"}'

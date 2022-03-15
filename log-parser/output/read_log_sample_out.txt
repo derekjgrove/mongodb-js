@@ -1,0 +1,1 @@
+curl --request POST 'http://localhost:8000/find' --header 'Content-Type: application/json' --header 'Access-Control-Request-Headers: *' --data-raw '{"dataSource":"<CLUSTER_NAME>","collection":"<collection>","query":{"foo":"bar"},"method":"find"}'
