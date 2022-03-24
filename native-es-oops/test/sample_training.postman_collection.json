@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "e83f708a-07bd-44c3-b953-db3912826c92",
+		"name": "sample_training",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getCompanyById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Access-Control-Request-Headers",
+						"value": "*",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/companies/52cdef7c4bab8bd675297d98",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"companies",
+						"52cdef7c4bab8bd675297d98"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
