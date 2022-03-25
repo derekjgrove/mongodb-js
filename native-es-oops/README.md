@@ -22,10 +22,11 @@ This is an MVC application that abides by OOPs concepts utilizing Ecmascript. Ap
 2. Import the file in the /test folder
 
 ### TODO
-- [ ] Full CRUD on companies
+- [ x ] Full CRUD on companies
 - [ ] Introduce at least 1 more collection
 - [ ] MongoDB GridFS
 - [ ] CODECs
+- [ ] Operational Transformation (versioning)
 - [ ] Auth and Access Control
 
 ### Inspiration

@@ -6,36 +6,148 @@
 	},
 	"item": [
 		{
-			"name": "getCompanyById",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+			"name": "companies",
+			"item": [
+				{
+					"name": "getCompanyById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Access-Control-Request-Headers",
+								"value": "*",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/companies/getCompanyById/52cdef7c4bab8bd675297d98",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"companies",
+								"getCompanyById",
+								"52cdef7c4bab8bd675297d98"
+							]
+						}
 					},
-					{
-						"key": "Access-Control-Request-Headers",
-						"value": "*",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "http://localhost:3000/api/companies/52cdef7c4bab8bd675297d98",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"companies",
-						"52cdef7c4bab8bd675297d98"
-					]
+					"response": []
+				},
+				{
+					"name": "updateCompanyById",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Access-Control-Request-Headers",
+								"value": "*",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"MongoDB\",\r\n    \"permalink\":\"MongoDB\",\r\n    \"description\":\"The best DB company\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/companies/updateCompanyById/52cdef7c4bab8bd675297d98",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"companies",
+								"updateCompanyById",
+								"52cdef7c4bab8bd675297d98"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createCompany",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Access-Control-Request-Headers",
+								"value": "*",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"MongoDB\",\r\n    \"permalink\":\"MongoDB\",\r\n    \"description\":\"The best DB company\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/companies/createCompany",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"companies",
+								"createCompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCompanyById",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Access-Control-Request-Headers",
+								"value": "*",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/companies/deleteCompanyById/623e0ec5e266cb83ecdc19b6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"companies",
+								"deleteCompanyById",
+								"623e0ec5e266cb83ecdc19b6"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }
