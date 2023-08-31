@@ -1,4 +1,5 @@
 import CompaniesSL from './companies.js'
+import FilesSL from './files.js'
 import { Logger } from './../../utils/index.js'
 
 class ServiceLayer {
@@ -7,6 +8,7 @@ class ServiceLayer {
 
         try {
             this.CompaniesSL = new CompaniesSL(DAL)
+            this.FilesSL = new FilesSL(DAL)
         } catch (error) {
             Logger('ERROR', process.cwd(), 'Encountered error Initializing Service Layer' + error)
             return error
