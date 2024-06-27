@@ -17,6 +17,10 @@ This is an MVC application that abides by OOPs concepts utilizing Ecmascript. Ap
 - Install dependencies - `npm install`
 - Run the application - `npm start`
 
+### Generate and view swagger spec
+`npm run swagger-autogen`
+navigate to http://localhost:3000/api-docs/
+
 ### Testing
 1. Download Postman
 2. Import the file in the /test folder

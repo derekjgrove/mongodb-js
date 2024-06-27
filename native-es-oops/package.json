@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "swagger-autogen": "node ./build/swagger.js"
   },
   "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.3",
-    "mongodb": "^4.4.1",
-    "multer": "^1.4.5-lts.1"
+    "mongodb": "^5.9.2",
+    "multer": "^1.4.5-lts.1",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
   }
 }
